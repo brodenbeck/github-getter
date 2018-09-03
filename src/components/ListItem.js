@@ -18,7 +18,7 @@ class ListItem extends Component {
     return (
       <li className={"card " + (this.state.isExpanded ? "expanded" : "")}>
         <span className="card__header" onClick={this.toggleItemDetails}>
-          <h2>{this.props.repository.name} / {this.props.repository.owner}</h2>
+          <h2>{this.props.repository.owner} / {this.props.repository.name}</h2>
           <img className="icon__arrow-down" src={Arrow} alt="" />
         </span>
         {

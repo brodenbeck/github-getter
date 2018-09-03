@@ -23,3 +23,15 @@ There are many areas in which the user interface can be cleaned up and improved.
 * Showing just a few repositories when a user searches might help to reduce the cognitive load on the user. For example, I would only show five repository cards to begin with, adding a "Show More" button to load the remaining repositories. Seeing up to 100 cards can be overwhelming for the user.
 
 * A fade-in/out or scroll-down/up effect could be added when toggling the card details to improve the user's interaction with the application.
+
+### Accessibility
+
+In future implementations, I would like to add accessibility support including aria labelling, alt tags, etc. The current implementation is, unfortunately, not highly accessible.
+
+### Documentation
+
+Method, class, and general documentation should be added to improve maintainability.
+
+### Testing
+
+Utilizing a framework to test API endpoints, services, and component rendering would help solidify code integrity.
