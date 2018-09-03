@@ -1,6 +1,5 @@
 button {
-  background-color: $green;
-  background-image: $green-gradient;
+  background: $green-gradient;
   color: $white;
   position: relative;
   display: inline-block;
@@ -11,7 +10,8 @@ button {
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  border: 1px solid ($black, 0.2);
+  border: 1px solid $black;
   border-radius: 0.25em;
   appearance: none;
+  transition: 0.3s;
 }

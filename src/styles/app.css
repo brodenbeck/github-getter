@@ -390,8 +390,7 @@ template {
   display: none; }
 
 button {
-  background-color: #28a745;
-  background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+  background: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
   color: #ffffff;
   position: relative;
   display: inline-block;
@@ -402,9 +401,24 @@ button {
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  border: 1px solid #24292e, 0.2;
+  border: 1px solid #24292e;
   border-radius: 0.25em;
-  appearance: none; }
+  appearance: none;
+  transition: 0.3s; }
+
+input {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #24292e;
+  background: #ffffff;
+  color: #586069;
+  font-weight: 400;
+  border-radius: 0.25em;
+  transition: 0.3s; }
+  input:focus {
+    border: 1px solid #0366d6;
+    outline: none; }
 
 *,
 *:before,
@@ -484,6 +498,79 @@ ol {
   .wrapper {
     width: 962px; } }
 
+.card {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #d1d5da;
+  border-radius: 0.25em;
+  margin-bottom: 8px;
+  transition: 0.4s; }
+  .card:hover {
+    box-shadow: 0 0 8px 0 rgba(88, 96, 105, 0.5); }
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px; }
+
+.card__content {
+  display: block;
+  padding: 0 16px 16px; }
+
+.card__body {
+  display: block;
+  font-size: 16px; }
+
+.card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.card__footer-item {
+  margin-right: 20px;
+  color: #586069;
+  font-size: 14px; }
+  .card__footer-item:last-of-type {
+    margin-right: 0; }
+
+.card.expanded .card__header .icon__arrow-down {
+  transform: rotate(180deg); }
+
+.search-box {
+  background: #24292e;
+  border-radius: 0.25em;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto; }
+
+.search-box__form {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 20px;
+  height: 40px; }
+
+.search-box__input {
+  flex: 1;
+  margin-right: 10px; }
+
+.icon__star {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  opacity: 0.7;
+  transition: 0.3s; }
+
+.icon__arrow-down {
+  transition: 0.3s; }
+
 .color-black {
   color: #24292e; }
 
@@ -500,7 +587,7 @@ ol {
   background-color: #24292e; }
 
 .bg-gray-light {
-  background-color: #fafbfc; }
+  background-color: #d1d5da; }
 
 .bg-green {
   background-color: #28a745; }

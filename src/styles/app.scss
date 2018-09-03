@@ -5,9 +5,14 @@
 @import "generic/normalize";
 
 @import "elements/button";
+@import "elements/input";
 @import "elements/type";
 
 @import "objects/wrapper";
+
+@import "components/card";
+@import "components/search-box";
+@import "components/icon";
 
 @import "utilities/colors";
 @import "utilities/positioning";

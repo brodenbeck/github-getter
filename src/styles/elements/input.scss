@@ -1,0 +1,15 @@
+input {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid $black;
+  background: $white;
+  color: $gray;
+  font-weight: 400;
+  border-radius: 0.25em;
+  transition: 0.3s;
+  &:focus {
+    border: 1px solid $blue;
+    outline: none;
+  }
+}

@@ -1,0 +1,25 @@
+.search-box {
+  background: $black;
+  border-radius: 0.25em;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.search-box__form {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.search-box__input {
+  flex: 1;
+  margin-right: 10px;
+}

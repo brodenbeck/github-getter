@@ -12,22 +12,25 @@ class App extends Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
   handleSubmit(repositories) {
     this.setState({
       repositories: repositories,
       userHasSubmittedSearch: true,
     });
   }
-
   render() {
     return (
       <div className="App">
-        <Search onSubmit={this.handleSubmit} />
-        <Repositories
-          repositories={this.state.repositories}
-          userHasSubmittedSearch={this.state.userHasSubmittedSearch}
-        />
+        <div className="wrapper">
+          <section className="search-box">
+            <h1 className="text-center color-white">Search GitHub repositories by keyword.</h1>
+            <Search onSubmit={this.handleSubmit} />
+          </section>
+          <Repositories
+            repositories={this.state.repositories}
+            userHasSubmittedSearch={this.state.userHasSubmittedSearch}
+          />
+        </div>
       </div>
     );
   }
